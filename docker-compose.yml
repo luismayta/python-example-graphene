@@ -19,7 +19,6 @@ services:
     ports:
       - "5432:5432"
 
-  # Django web application
   web:
     restart: always
     image: python:3.6.1
