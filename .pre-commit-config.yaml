@@ -27,7 +27,7 @@
     -   id: requirements-txt-fixer
     -   id: name-tests-test
 -   repo: git://github.com/pre-commit/mirrors-pylint
-    sha: v1.6.4.post1
+    sha: v1.7.1
     hooks:
     -   id: pylint
         args:
@@ -38,7 +38,7 @@
     -   id: scss-lint
         files: \.(scss)$
 -   repo: git@github.com:pre-commit/pre-commit
-    sha: 5d43b05bd375473004ce48cd61307690572d423b
+    sha: v0.14.0
     hooks:
     -   id: validate_config
     -   id: validate_manifest

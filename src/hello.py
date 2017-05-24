@@ -5,7 +5,7 @@ class Query(graphene.ObjectType):
     hello = graphene.String(
         name=graphene.Argument(
             graphene.String,
-            default_value="stranger")
+            default_value='stranger')
     )
 
     def resolve_hello(self, args, context, info):
@@ -16,6 +16,4 @@ class Query(graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 result = schema.execute('{ hello }')
-import ipdb
-ipdb.set_trace()
 print(result.data.get('hello'))
